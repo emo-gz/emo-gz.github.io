@@ -1,0 +1,157 @@
+/* 重置一些默认样式以提供更好的一致性 */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0; 
+  }
+  
+  /* 基本样式 */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s; /* 添加渐变效果 */
+  }
+  
+  header {
+    background-color: #f0f0f0; /* 上面的背景色为粉色 */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  nav ul {
+    list-style: none; 
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  margin: 0 7.5px; /* 间隙为15px的一半 */
+}
+
+.advertisement {
+  position: absolute;
+  bottom: 300px; /* 根据文本大小微调位置 */
+  left:-240px;
+  right: 0;
+  text-align: center;
+}
+  main {
+    padding: 20px;
+  }
+  
+  article {
+    padding: 20px; 
+    border: 2px solid #e0f2e9; /* 边框颜色为浅绿色 */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* 内部背景颜色 */
+    transition: border-color 0.5s, background-color 0.5s; /* 添加渐变效果 */
+    color: #333; /* 文本颜色为深色 */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0; /* 下面的背景色为粉色 */
+    color: #333;
+  }
+  
+  /* 添加深色模式切换按钮样式 */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  /* 圆形滑块的样式 */  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* 深色模式的样式 */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s; /* 添加渐变效果 */
+  }
+  
+  article.dark-mode {
+    border-color: #333; /* 边框颜色变暗 */
+    background-color: #fff; /* 内部背景颜色为白色 */
+    color: #fff; /* 文本颜色为白色 */  
+  }
+  
+  footer.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
